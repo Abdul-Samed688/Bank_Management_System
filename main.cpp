@@ -49,6 +49,7 @@ int main()
 			case '7':
 				break;
 			case '8':
+				cout << "\n\n\tThank you for using Bank Management System";
 				break;
 			default:cout << "\a";
 		}
