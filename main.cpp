@@ -5,6 +5,10 @@
 
 using namespace std;
 
+// function declaration
+void intro(); //introductory screen function
+
+
 int main()
 {
 	char ch;
@@ -31,4 +35,17 @@ int main()
 		cin.get();
 	} while (ch != '8');
 	return 0;
+}
+
+// INTRODUCTION FUNCTIONS
+void intro()
+{
+	cout << "\n\n\t====================";
+		cout << "\n\t  ***BANK***";
+	cout << "\n\n\t***MANAGEMENT***";
+	cout << "\n\n\t  ***SYSTEM*** \n";
+	cout << "\t====================";
+	cout << "\n\n\n\n\t BY: ABDUL SAMED MANOR \n\n\n";
+	cout << "\t Press Enter to continue...";
+	cin.get();
 }
