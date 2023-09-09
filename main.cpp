@@ -5,6 +5,17 @@
 
 using namespace std;
 
+//CLASS USED
+
+class account
+{
+	int acno;
+	char name[50];
+	int deposit;
+	char type;
+	public:
+};
+
 // function declaration
 void intro(); //introductory screen function
 
