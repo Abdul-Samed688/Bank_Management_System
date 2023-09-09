@@ -13,6 +13,7 @@ int main()
 {
 	char ch;
 	int num;
+	intro();
 
 	do
 	{
