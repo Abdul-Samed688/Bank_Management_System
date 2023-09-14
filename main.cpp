@@ -19,6 +19,20 @@ class account
 
 // function declaration
 void intro(); //introductory screen function
+void account::create_account()
+{
+	cout << "\n Enter The account No.:";
+	cin >> acno;
+	cout << "\n\n Enter The Name of The account Holder: ";
+	cin.ignore();
+	cin.getline(name, 50);
+	cout << "\n Enter Type of The account (C/S): ";
+	cin >> type;
+	type = toupper(type);
+	cout << "\n Enter The initial amount (>=500 for savings and >= 1000 for current): ";
+	cin >> deposit;
+	cout << "\n\n\n Account Created..";
+}
 
 
 int main()
