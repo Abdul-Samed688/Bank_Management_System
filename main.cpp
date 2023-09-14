@@ -19,6 +19,7 @@ class account
 
 // function declaration
 void intro(); //introductory screen function
+void write_account(); // function to write record in binary file
 void account::create_account()
 {
 	cout << "\n Enter The account No.:";
