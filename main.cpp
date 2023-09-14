@@ -62,6 +62,7 @@ int main()
 		switch(ch)
 		{
 			case '1':
+				write_account();
 				break;
 			case '2':
 				break;
