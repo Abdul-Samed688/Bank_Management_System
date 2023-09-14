@@ -86,6 +86,17 @@ int main()
 	return 0;
 }
 
+// function to write in file
+void write_account()
+{
+	account ac;
+	ofstream outFile;
+	outFile.open("account.dat", ios::binary | ios::app);
+ac.create_account();
+outFile.write(reinterpret_cast<char*>(&ac), sizeof(account));
+outFile.close();
+}
+
 // INTRODUCTION FUNCTIONS
 void intro()
 {
