@@ -14,6 +14,7 @@ class account
 	int deposit;
 	char type;
 	public:
+	void create_account(); //function to create new account
 };
 
 // function declaration
