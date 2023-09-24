@@ -137,7 +137,11 @@ void deposit_withdraw()
 				else
 					ac.draw(amt);
 			}
-			//continue from here
+			int pos = (-1) * static_cast<int>(sizeof(ac));
+			File.seekp(pos, ios::cur);
+			File.write(reinterpret_cast<char*> (&ac), sizeof(account));
+			cout << "\n\n\t Record Updated";
+			fount = true;
 		}
 	}
 }
