@@ -144,6 +144,9 @@ void deposit_withdraw()
 			found = true;
 		}
 	}
+	File.close();
+	if (found == false)
+		cout << "\n\n\t Record Not Found";
 }
 
 // INTRODUCTION FUNCTIONS
