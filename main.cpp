@@ -65,6 +65,7 @@ int main()
 				write_account();
 				break;
 			case '2':
+				cout << "\n\n\tEnter The account number: "; cin >> num;
 				break;
 			case '3':
 				break;
