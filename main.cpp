@@ -141,7 +141,7 @@ void deposit_withdraw()
 			File.seekp(pos, ios::cur);
 			File.write(reinterpret_cast<char*> (&ac), sizeof(account));
 			cout << "\n\n\t Record Updated";
-			fount = true;
+			found = true;
 		}
 	}
 }
