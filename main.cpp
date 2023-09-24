@@ -126,7 +126,14 @@ void deposit_withdraw()
 				cin >> amt;
 				ac.dep(amt);
 			}
-			// continue from here
+			if (option == 2)
+			{
+				cout << "\n\n\tTO WITHDRAW AMOUNT";
+				cout << "\n\nEnter The amount to be withdraw";
+				cin >> amt;
+				int bal = ac.retdeposit() - amt;
+				// continue from here
+			}
 		}
 	}
 }
