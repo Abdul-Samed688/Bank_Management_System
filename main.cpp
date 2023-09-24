@@ -100,6 +100,37 @@ outFile.write(reinterpret_cast<char*>(&ac), sizeof(account));
 outFile.close();
 }
 
+// Function to deposit and withdraw amounts
+void deposit_withdraw()
+{
+	int amt;
+	bool found = false;
+	account ac;
+	fstream File;
+	File.open("account.dat", ios::binary | ios::in | ios::out);
+	if (!File)
+	{
+		cout << "File could not be open !! Press any Key..";
+		return;
+	}
+	while (!File.eof() && found == false)
+	{
+		File.read(reinterpret_cast<char*> (&ac), sizeof(account));
+		if (ac.retacno() == n)
+		{
+			ac.show_account();
+			if (option == 1)
+			{
+				cout << "\n\n\tTO DEPOSITE AMOUNT";
+				cout << "\n\nEnter The amount to be deposited";
+				cin >> amt;
+				ac.dep(amt);
+			}
+			// continue from here
+		}
+	}
+}
+
 // INTRODUCTION FUNCTIONS
 void intro()
 {
