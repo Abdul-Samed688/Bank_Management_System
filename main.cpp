@@ -132,8 +132,12 @@ void deposit_withdraw()
 				cout << "\n\nEnter The amount to be withdraw";
 				cin >> amt;
 				int bal = ac.retdeposit() - amt;
-				// continue from here
+				if ((bal < 500 && ac.rettype() == 'S') || (bal <1000 && ac.rettype() == 'C'))
+					cout << "Insufficience balance";
+				else
+					ac.draw(amt);
 			}
+			//continue from here
 		}
 	}
 }
